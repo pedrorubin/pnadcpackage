@@ -1,11 +1,19 @@
+#' Load annual PNADC microdata
+#'
+#' Load annual PNADC microdata
+#' @param ano Year
+#' @param path_pnadc The folder in which the microdata txt files are stores
+#' @return A dataframe with all the microdata information
+#' @examples ler_pnadc_anual(2018, "./microdata_folder");
+#' @export
 
 
-ler_pnadc_anual <- function(ano, path_pnadc, path_leitores, path_deflator) {
-  arquivo = glue("{path_pnadc}/PNADC_{ano}_visita1.txt")
-  # salvamento = glue("./dados/anual/PNADC_{ano}.rds")
-  dicionario = glue("{path_leitores}/leitores_{ano}.rds")
+ler_pnadc_anual <- function(ano, path_pnadc) {
+  arquivo <- glue("{path_pnadc}/PNADC_{ano}_visita1.txt")
 
-  leitores <- read_rds(dicionario)
+  leitor_nome <- glue("leitores_{ano}")
+
+  leitores <- get(leitor_nome)
 
   colpos <- fwf_widths(leitores$tamanho,
                        col_names = leitores$variavel)
@@ -20,20 +28,12 @@ ler_pnadc_anual <- function(ano, path_pnadc, path_leitores, path_deflator) {
     mutate(across(.fns = as.numeric),
            regiao = floor(UF/10))
 
-  deflator <- read_xls(glue("{path_deflator}/deflator_PNADC_2019.xls")) %>%
-    mutate(Trimestre = trim,
-           Ano = ano,
-           UF = uf,
-           Habitual = CO2,
-           Efetivo = CO2e,
-           ID_deflator = str_c(Ano,Trimestre,UF)) %>%
-    filter(Ano == unique(pnad$Ano)) %>%
-    mutate(across(.fns = as.numeric)) %>%
-    select(ID_deflator, Habitual, Efetivo)
+  deflator <- deflator %>%
+    filter(Ano == unique(pnad$Ano))
 
   pnady <- pnadx %>%
     left_join(deflator, by = "ID_deflator") %>%
-    mutate(VD4019_real = VD4019*Habitual,
-           VD4020_real = VD4020*Efetivo,
-           VD4048_real = VD4048*Efetivo)
+    mutate(VD4019_real = VD4019*CO2,
+           VD4020_real = VD4020*CO2e,
+           VD4048_real = VD4048*CO2)
 }

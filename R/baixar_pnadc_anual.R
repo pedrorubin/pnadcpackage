@@ -41,13 +41,3 @@ baixar_pnadc_anual <- function(ano, destination_path){
   unzip(file.path(tempFile), exdir = destination_path)
 
 }
-
-baixar_pnadc_anual(2012, "./NOVOTESTE")
-baixar_pnadc_anual(2013, "./NOVOTESTE")
-baixar_pnadc_anual(2014, "./NOVOTESTE")
-baixar_pnadc_anual(2015, "./NOVOTESTE")
-baixar_pnadc_anual(2016, "./NOVOTESTE")
-baixar_pnadc_anual(2017, "./NOVOTESTE")
-baixar_pnadc_anual(2018, "./NOVOTESTE")
-baixar_pnadc_anual(2019, "./NOVOTESTE")
-
