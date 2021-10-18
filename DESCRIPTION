@@ -2,8 +2,12 @@ Package: pnadcpackage
 Type: Package
 Title: PNADC (IBGE - Brazil) Data and Analysis
 Version: 0.1.0
-Author: Pedro Rubin
-Maintainer: Pedro Rubin
+Authors@R: 
+    person(given = "Pedro",
+           family = "Rubin",
+           role = c("aut", "cre"),
+           email = "prubincosta@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: This package aims to provide summary statistics and family-specific data concerning expenditure and income, available at the Pesquisa Nacional por Amostra Domiciliar Continua (PNADC - IBGE).
 License: MIT + file LICENSE
 Encoding: UTF-8
