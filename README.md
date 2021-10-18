@@ -4,9 +4,9 @@ Pacote para ler a analisar dados da PNADC anual (trimestral em breve)
 ## Qualquer coisa:
 prubincosta@gmail.com
 
-twitter.com/pedrorubincosta
+http://twitter.com/pedrorubincosta
 
-github.com/pedrorubin
+http://github.com/pedrorubin
 
 ## Como instalar
 devtools::install_github("pedrorubin/pnadcpackage")
