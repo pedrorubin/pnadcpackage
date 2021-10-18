@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 /NOVOTESTE/
+.Rdata
+.httr-oauth
+.DS_Store
