@@ -36,5 +36,5 @@ ler_pnadc_anual <- function(ano, path_pnadc) {
     left_join(deflator, by = "ID_deflator") %>%
     mutate(VD4019_real = VD4019*CO2,
            VD4020_real = VD4020*CO2e,
-           VD4048_real = VD4048*CO2)
+           VD4048_real = VD4048*CO2e)
 }
