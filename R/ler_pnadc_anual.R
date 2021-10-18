@@ -28,8 +28,9 @@ ler_pnadc_anual <- function(ano, path_pnadc) {
     mutate(across(.fns = as.numeric),
            regiao = floor(UF/10))
 
-  # deflator <- deflator %>%
-  #   filter(Ano == unique(pnad$Ano))
+  deflator <- deflator %>%
+    filter(Ano == unique(pnad$Ano)) %>%
+    select(-Ano)
 
   pnady <- pnadx %>%
     left_join(deflator, by = "ID_deflator") %>%
