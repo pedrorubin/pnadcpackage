@@ -5,12 +5,9 @@
 \alias{deflator}
 \title{Annual PNADC deflator}
 \format{
-A data frame with 972 rows and 9 variables:
+A data frame with 972 rows and 6 variables:
 \describe{
-  \item{Ano}{numeric, year}
-  \item{Trimestre}{numeric, quarter}
-  \item{UF}{numeric, state}
-  \item{ID_deflator}{key value combining Ano, Trimestre and UF, to join with microdata}
+  \item{ID_deflator}{key value combining Year (4 digits), Quarter (1 digit) and UF (2 digits), to join with microdata}
   \item{CO1}{deflator for the same year, usual (habitual) values}
   \item{CO1e}{deflator for the same year, effective (efetivo) values}
   \item{CO2}{deflator for the last year, usual (habitual) values}
