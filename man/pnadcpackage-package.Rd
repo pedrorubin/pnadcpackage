@@ -4,9 +4,8 @@
 \name{pnadcpackage-package}
 \alias{pnadcpackage}
 \alias{pnadcpackage-package}
-\title{pnadcpackage: What the Package Does (Title Case)}
+\title{pnadcpackage: PNADC (IBGE - Brazil) Data and Analysis}
 \description{
-More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+This package aims to provide summary statistics and family-specific data concerning expenditure and income, available at the Pesquisa Nacional por Amostra Domiciliar Continua (PNADC - IBGE).
 }
 \keyword{internal}
