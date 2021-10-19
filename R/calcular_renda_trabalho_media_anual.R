@@ -27,7 +27,8 @@ calcular_renda_trabalho_media_anual <- function(df_pnadc, tipo){
     df_pnadc %>%
       mutate(across(.fns = as.numeric)) %>%
       filter(VD4002 == 1,
-             is.na(VD4020_real) == F) %>%
+             is.na(VD4020_real) == F,
+             VD4020_real > 0) %>%
       summarise(Ano = unique(Ano),
                 renda_trab_efetivo_real = sum(VD4020_real * V1032)/sum(V1032),
                 renda_trab_efetivo_nominal = sum(VD4020 * V1032)/sum(V1032))
