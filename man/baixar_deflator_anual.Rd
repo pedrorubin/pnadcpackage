@@ -2,21 +2,19 @@
 % Please edit documentation in R/baixar_deflator_anual.R
 \name{baixar_deflator_anual}
 \alias{baixar_deflator_anual}
-\title{Download and create the deflator file for the Annual PNADC as both rds and csv}
+\title{Baixa e cria o arquivo de deflator para a PNADC anual, em rds e em csv}
 \usage{
-baixar_deflator_anual(destination_path)
+baixar_deflator_anual(caminho_pasta)
 }
 \arguments{
-\item{destination_path}{The folder in which the files are to be stored (if folder does not exist, it will be created)}
-
-\item{ano}{Year of of the Annual PNADC}
+\item{caminho_pasta}{A pasta (o caminho para a pasta) na qual os arquivos serão guardados (se não existir, a pasta será criada)}
 }
 \value{
-The files in the designated path (rds and csv)
+Os arquivos rds e csv na pasta designada
 }
 \description{
-Download and create the deflator file for the Annual PNADC as both rds and csv
+Baixa e cria o arquivo de deflator para a PNADC anual, em rds e em csv (é preciso acesso a internet)
 }
 \examples{
-baixar_deflator_anual(destination_path = "./deflator");
+baixar_deflator_anual(caminho_pasta = "./deflator");
 }

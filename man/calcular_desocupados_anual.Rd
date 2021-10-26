@@ -2,19 +2,22 @@
 % Please edit documentation in R/calcular_desocupados_anual.R
 \name{calcular_desocupados_anual}
 \alias{calcular_desocupados_anual}
-\title{Calculate the unoccupied population}
+\title{Calcular desocupados}
 \usage{
 calcular_desocupados_anual(df_pnadc)
 }
 \arguments{
-\item{df_pnadc}{The dataframe with the Annual PNADC data (see ler_pnadc_anual)}
+\item{df_pnadc}{O dataframe com dados da PNADC anual (ver ler_pnadc_anual)}
 }
 \value{
-A dataframe with 3 cols: year, total unoccupied and % of the workforce that are unoccupied
+Um dataframe com 3 colunas: ano, total desocupados e taxa de desocupação (% da força de trabalho)
 }
 \description{
-Calculate the unoccupied population
+Calcular desocupados (número absoluto e taxa de desocupação)
 }
 \examples{
 calcular_desocupados_anual(pnadc_2019);
+}
+\seealso{
+ler_pnadc_anual
 }

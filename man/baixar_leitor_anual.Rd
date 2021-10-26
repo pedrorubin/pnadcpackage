@@ -2,21 +2,21 @@
 % Please edit documentation in R/baixar_leitor_anual.R
 \name{baixar_leitor_anual}
 \alias{baixar_leitor_anual}
-\title{Download and create the reader file for the Annual PNADC as both rds and csv}
+\title{Baixa e cria o arquivo de leitor para a PNADC anual, em rds e csv}
 \usage{
-baixar_leitor_anual(ano, destination_path)
+baixar_leitor_anual(ano, caminho_pasta)
 }
 \arguments{
-\item{ano}{Year of of the Annual PNADC}
+\item{ano}{Ano da PNADC Anual}
 
-\item{destination_path}{The folder in which the files are to be stored (if folder does not exist, it will be created)}
+\item{caminho_pasta}{A pasta (o caminho para a pasta) na qual os arquivos serão guardados (se não existir, a pasta será criada)}
 }
 \value{
-The files in the designated path (rds and csv)
+Os arquivos rds e csv na pasta designada
 }
 \description{
-Download and create the reader file for the Annual PNADC as both rds and csv
+Baixa e cria o arquivo de leitor para a PNADC anual, em rds e csv (é preciso acesso a internet)
 }
 \examples{
-baixar_leitor_anual(ano = 2019, destination_path = "./leitores");
+baixar_leitor_anual(ano = 2019, caminho_pasta = "./leitores");
 }

@@ -2,21 +2,24 @@
 % Please edit documentation in R/montar_tabela_pobreza_anual.R
 \name{montar_tabela_pobreza_anual}
 \alias{montar_tabela_pobreza_anual}
-\title{Add monetary poverty condition as a column}
+\title{Adicionar condição de pobreza monetária como uma coluna}
 \usage{
 montar_tabela_pobreza_anual(df_pnadc, linha_pob)
 }
 \arguments{
-\item{df_pnadc}{The dataframe with the Annual PNADC data (see ler_pnadc_anual)}
+\item{df_pnadc}{O dataframe com dados da PNADC anual (ver ler_pnadc_anual)}
 
-\item{linha_pob}{The monetary poverty threshold (household per capita monthly income)}
+\item{linha_pob}{A linha monetária de pobreza, em termos da renda domiciliar per capita mensal}
 }
 \value{
-A dataframe without rows in which VD2002 is 15, 16, 17; and +2 cols: rdpc with household per capita monthly income and pobreza that equals 1 if person is poor (household per capita monthly income lower than the poverty threshold)
+Um dataframe sem as linhas nas quais VD2002 igual a 15, 16 ou 17; e com 2 colunas adicionais: "rdpc" com a renda domiciliar per capital mensal real e "pobreza" com valor igual a 1 se a pessoa for pobre (rdpc < linha de pobreza)e 0 caso contrário
 }
 \description{
-Add household per capita monthly income as a column
+Adicionar condição de pobreza monetária como uma coluna (dummy)
 }
 \examples{
-montar_tabela_pobreza_anual(pnadc_2019, 400);
+montar_tabela_pobreza_anual(pnadc_2019, linha_pob = 400);
+}
+\seealso{
+calcular_pobreza_anual, montar_tabela_rdpc_anual, calcular_rdpc_media_anual
 }

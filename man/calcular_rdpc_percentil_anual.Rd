@@ -2,22 +2,25 @@
 % Please edit documentation in R/calcular_rdpc_percentil_anual.R
 \name{calcular_rdpc_percentil_anual}
 \alias{calcular_rdpc_percentil_anual}
-\title{Calculate percentile household per capita monthly income}
+\title{Calcular o valor da renda domiciliar per capital mensal associado a determinado percentil}
 \usage{
 calcular_rdpc_percentil_anual(df_pnadc, percentil = 0.5)
 }
 \arguments{
-\item{df_pnadc}{The dataframe with the Annual PNADC data (see ler_pnadc_anual)}
+\item{df_pnadc}{O dataframe com dados da PNADC anual (ver ler_pnadc_anual)}
 
-\item{percentil}{Numeric. The percentile (default = 0.5 : median). Can be more than one (see examples)}
+\item{percentil}{O percentil (default = 0.5 : isto é, o padrão é retornar a renda mediana). Pode ser mais de um valor na mesma chamada (ver exemplos)}
 }
 \value{
-A dataframe with 3 cols: year, percentile and the respective household per capita monthly income
+Um dataframe com 3 colunas: ano, percentil e a respectiva renda domiciliar per capita mensal máxima
 }
 \description{
-Calculate percentile household per capita monthly income
+Calcular o valor da renda domiciliar per capital mensal associado a determinado percentil (é o ponto de corte, não o valor médio)
 }
 \examples{
 calcular_rdpc_percentil_anual(pnadc_2019);
 calcular_rdpc_percentil_anual(pnadc_2015, percentil = c(0.1, 0.4, 0.9, 0.95))
+}
+\seealso{
+calcular_rdpc_media_anual
 }

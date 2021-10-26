@@ -1,12 +1,13 @@
-#' Calculate poverty
+#' Calcular pobreza
 #'
-#' From a poverty threshold, calculate the number of poor and the 3 indexes from the FGT family
-#' @param df_pnadc The dataframe with the Annual PNADC data (see ler_pnadc_anual)
-#' @param linha_pob The monetary poverty threshold (household per capita monthly income)
-#' @return A dataframe with 6 cols: year, povery threshold, number of poor, P0 (proportion of poor - %), P1 (income-gap measure) and P2 (square income-gap)
+#' A partir de uma linha de pobreza, calcular o número de pobres e os 3 índices FGT
+#' @param df_pnadc O dataframe com dados da PNADC anual (ver ler_pnadc_anual)
+#' @param linha_pob A linha monetária de pobreza, em termos da renda domiciliar per capita mensal
+#' @return Um dataframe com 6 colunas: ano, linha de pobreza, número de pobres, P0 (proporção de pobres - %), P1 (medida hiato de renda) and P2 (hiato da renda ao quadrado)
 #' @examples calcular_pobreza_anual(pnadc_2019, 400);
 #' @references Foster, J.;  Greer, J.; Thorbecke, E. (1984) A class of decomposable poverty measures. Econometrica, v. 52, n. 3, pp. 761-766
-#' @references See also https://guilhermejacob.github.io/context/2-poverty.html#poverty
+#' @references https://guilhermejacob.github.io/context/2-poverty.html#poverty
+#' @seealso ler_pnadc_anual, montar_tabela_pobreza_anual, montar_tabela_rdpc_anual, calcular_rdpc_media_anual
 #' @export
 
 calcular_pobreza_anual <- function(df_pnadc, linha_pob){

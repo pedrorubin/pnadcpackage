@@ -1,9 +1,11 @@
-#' Calculate average household per capita monthly income
+#' Calcular a renda domiciliar per capital mensal média
 #'
-#' Calculate average household per capita monthly income
-#' @param df_pnadc The dataframe with the Annual PNADC data (see ler_pnadc_anual)
-#' @return A dataframe with 2 cols: year and the average household per capita monthly income
+#' Calcular a renda domiciliar per capital mensal média
+#' @param df_pnadc O dataframe com dados da PNADC anual (ver ler_pnadc_anual)
+#' @return Um dataframe com 6 colunas: ano e a renda domiciliar per capita média mensal
 #' @examples calcular_rdpc_media_anual(pnadc_2019);
+#' @seealso calcular_rdpc_percentil_anual
+#' @seealso calcular_renda_trabalho_media_anual
 #' @export
 
 calcular_rdpc_media_anual <- function(df_pnadc){

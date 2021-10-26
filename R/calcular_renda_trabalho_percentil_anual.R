@@ -1,10 +1,10 @@
-#' Calculate percentile work income
+#' Calcular o valor da renda do trabalho mensal associado a determinado percentil
 #'
-#' Calculate percentile work income
-#' @param df_pnadc The dataframe with the Annual PNADC data (see ler_pnadc_anual)
-#' @param percentil Numeric. The percentile (default = 0.5 : median). Can be more than one (see examples)
-#' @param tipo "habitual" or "efetivo" The kind of income: "habitual" is the customary monthly income; "efetivo" is the income actually received in that month
-#' @return A dataframe with 3 cols: year, percentile and the respective monthly work real income
+#' Calcular o valor da renda do trabalho mensal associado a determinado percentil (é o ponto de corte, não o valor médio)
+#' @param df_pnadc O dataframe com dados da PNADC anual (ver ler_pnadc_anual)
+#' @param percentil O percentil (default = 0.5 : isto é, o padrão é retornar a renda mediana). Pode ser mais de um valor na mesma chamada (ver exemplos)
+#' @param tipo "habitual" ou "efetivo". O primeiro é a renda que costuma receber, o segundo é a renda efetivamente recebida
+#' @return Um dataframe com 3 colunas: ano, percentil e a respectiva renda do trabalho mensal máxima
 #' @examples calcular_renda_trabalho_percentil_anual(pnadc_2019);
 #' @examples calcular_renda_trabalho_percentil_anual(pnadc_2015, percentil = c(0.1, 0.4, 0.9, 0.95))
 #' @export

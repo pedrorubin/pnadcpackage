@@ -2,21 +2,21 @@
 % Please edit documentation in R/ler_pnadc_anual.R
 \name{ler_pnadc_anual}
 \alias{ler_pnadc_anual}
-\title{Load annual PNADC microdata}
+\title{Carregar os microdados da PNADC anual}
 \usage{
-ler_pnadc_anual(ano, path_pnadc)
+ler_pnadc_anual(ano, caminho_pnadc)
 }
 \arguments{
-\item{ano}{Year}
+\item{ano}{ano}
 
-\item{path_pnadc}{The folder in which the microdata txt files are stores}
+\item{caminho_pnadc}{A pasta na qual os arquivos de microdados estão guardados (em geral a mesma utilizada na função baixar_pnadc_anual)}
 }
 \value{
-A dataframe with all the microdata information
+Um dataframe com todos os microdados
 }
 \description{
-Load annual PNADC microdata
+Carregar (para o R) os microdados da PNADC anual
 }
 \examples{
-ler_pnadc_anual(2018, "./microdata_folder");
+ler_pnadc_anual(2018, "./pasta_microdados");
 }

@@ -1,13 +1,12 @@
-#' Download and create the deflator file for the Annual PNADC as both rds and csv
+#' Baixa e cria o arquivo de deflator para a PNADC anual, em rds e em csv
 #'
-#' Download and create the deflator file for the Annual PNADC as both rds and csv
-#' @param ano Year of of the Annual PNADC
-#' @param destination_path The folder in which the files are to be stored (if folder does not exist, it will be created)
-#' @return The files in the designated path (rds and csv)
-#' @examples baixar_deflator_anual(destination_path = "./deflator");
+#' Baixa e cria o arquivo de deflator para a PNADC anual, em rds e em csv (é preciso acesso a internet)
+#' @param caminho_pasta A pasta (o caminho para a pasta) na qual os arquivos serão guardados (se não existir, a pasta será criada)
+#' @return Os arquivos rds e csv na pasta designada
+#' @examples baixar_deflator_anual(caminho_pasta = "./deflator");
 #' @export
 
-baixar_deflator_anual <- function(destination_path){
+baixar_deflator_anual <- function(caminho_pasta){
 
   url <- "https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/Anual/Microdados/Visita/Documentacao_Geral/deflator_PNADC_2019.xls"
 
@@ -24,7 +23,7 @@ baixar_deflator_anual <- function(destination_path){
     select(Ano, Trimestre, UF, ID_deflator, CO1, CO1e, CO2, CO2e, CO3)
 
 
-  write_rds(deflator, file = glue("{destination_path}/deflator.rds"))
-  write_csv(deflator, file = glue("{destination_path}/deflator.csv"))
+  write_rds(deflator, file = glue("{caminho_pasta}/deflator.rds"))
+  write_csv(deflator, file = glue("{caminho_pasta}/deflator.csv"))
 
 }

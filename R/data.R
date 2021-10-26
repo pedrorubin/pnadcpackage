@@ -1,111 +1,111 @@
-#' Annual PNADC reader 2012
+#' Leitores da PNADC anual - 2012
 
 #'
-#' @format A data frame with 247 rows and 4 variables:
+#' @format Um dataframe com 247 linhas e 4 variáveis
 #' \describe{
-#'   \item{inicio}{numeric, beggining position of the variable in the microdata txt file}
-#'   \item{fim}{numeric, ending position of the variable in the microdata txt file}
-#'   \item{tamanho}{numeric, size of the variable in the microdata txt file}
-#'   \item{variavel}{character, name of the variable in the microdata txt file}
+#'   \item{inicio}{numeric, posição inicial da variável no arquivo txt de microdados}
+#'   \item{fim}{numeric, posição final da variável no arquivo txt de microdados}
+#'   \item{tamanho}{numeric, tamanho da variável no arquivo txt de microdados}
+#'   \item{variavel}{character, nome da variável no arquivo txt de microdados}
 #' }
 "leitores_2012"
 
-#' Annual PNADC reader 2013
+#' Leitores da PNADC anual - 2013
 
 #'
-#' @format A data frame with 247 rows and 4 variables:
+#' @format Um dataframe com 247 linhas e 4 variáveis
 #' \describe{
-#'   \item{inicio}{numeric, beggining position of the variable in the microdata txt file}
-#'   \item{fim}{numeric, ending position of the variable in the microdata txt file}
-#'   \item{tamanho}{numeric, size of the variable in the microdata txt file}
-#'   \item{variavel}{character, name of the variable in the microdata txt file}
+#'   \item{inicio}{numeric, posição inicial da variável no arquivo txt de microdados}
+#'   \item{fim}{numeric, posição final da variável no arquivo txt de microdados}
+#'   \item{tamanho}{numeric, tamanho da variável no arquivo txt de microdados}
+#'   \item{variavel}{character, nome da variável no arquivo txt de microdados}
 #' }
 "leitores_2013"
 
-#' Annual PNADC reader 2014
+#' Leitores da PNADC anual - 2014
 
 #'
-#' @format A data frame with 247 rows and 4 variables:
+#' @format Um dataframe com 247 linhas e 4 variáveis
 #' \describe{
-#'   \item{inicio}{numeric, beggining position of the variable in the microdata txt file}
-#'   \item{fim}{numeric, ending position of the variable in the microdata txt file}
-#'   \item{tamanho}{numeric, size of the variable in the microdata txt file}
-#'   \item{variavel}{character, name of the variable in the microdata txt file}
+#'   \item{inicio}{numeric, posição inicial da variável no arquivo txt de microdados}
+#'   \item{fim}{numeric, posição final da variável no arquivo txt de microdados}
+#'   \item{tamanho}{numeric, tamanho da variável no arquivo txt de microdados}
+#'   \item{variavel}{character, nome da variável no arquivo txt de microdados}
 #' }
 "leitores_2014"
 
-#' Annual PNADC reader 2015
+#' Leitores da PNADC anual - 2015
 
 #'
-#' @format A data frame with 287 rows and 4 variables:
+#' @format Um dataframe com 287 linhas e 4 variáveis
 #' \describe{
-#'   \item{inicio}{numeric, beggining position of the variable in the microdata txt file}
-#'   \item{fim}{numeric, ending position of the variable in the microdata txt file}
-#'   \item{tamanho}{numeric, size of the variable in the microdata txt file}
-#'   \item{variavel}{character, name of the variable in the microdata txt file}
+#'   \item{inicio}{numeric, posição inicial da variável no arquivo txt de microdados}
+#'   \item{fim}{numeric, posição final da variável no arquivo txt de microdados}
+#'   \item{tamanho}{numeric, tamanho da variável no arquivo txt de microdados}
+#'   \item{variavel}{character, nome da variável no arquivo txt de microdados}
 #' }
 "leitores_2015"
 
-#' Annual PNADC reader 2016
+#' Leitores da PNADC anual - 2016
 
 #'
-#' @format A data frame with 280 rows and 4 variables:
+#' @format Um dataframe com 280 linhas e 4 variáveis
 #' \describe{
-#'   \item{inicio}{numeric, beggining position of the variable in the microdata txt file}
-#'   \item{fim}{numeric, ending position of the variable in the microdata txt file}
-#'   \item{tamanho}{numeric, size of the variable in the microdata txt file}
-#'   \item{variavel}{character, name of the variable in the microdata txt file}
+#'   \item{inicio}{numeric, posição inicial da variável no arquivo txt de microdados}
+#'   \item{fim}{numeric, posição final da variável no arquivo txt de microdados}
+#'   \item{tamanho}{numeric, tamanho da variável no arquivo txt de microdados}
+#'   \item{variavel}{character, nome da variável no arquivo txt de microdados}
 #' }
 "leitores_2016"
 
-#' Annual PNADC reader 2017
+#' Leitores da PNADC anual - 2017
 
 #'
-#' @format A data frame with 282 rows and 4 variables:
+#' @format Um dataframe com 282 linhas e 4 variáveis
 #' \describe{
-#'   \item{inicio}{numeric, beggining position of the variable in the microdata txt file}
-#'   \item{fim}{numeric, ending position of the variable in the microdata txt file}
-#'   \item{tamanho}{numeric, size of the variable in the microdata txt file}
-#'   \item{variavel}{character, name of the variable in the microdata txt file}
+#'   \item{inicio}{numeric, posição inicial da variável no arquivo txt de microdados}
+#'   \item{fim}{numeric, posição final da variável no arquivo txt de microdados}
+#'   \item{tamanho}{numeric, tamanho da variável no arquivo txt de microdados}
+#'   \item{variavel}{character, nome da variável no arquivo txt de microdados}
 #' }
 "leitores_2017"
 
-#' Annual PNADC reader 2018
+#' Leitores da PNADC anual - 2018
 
 #'
-#' @format A data frame with 284 rows and 4 variables:
+#' @format Um dataframe com 284 linhas e 4 variáveis
 #' \describe{
-#'   \item{inicio}{numeric, beggining position of the variable in the microdata txt file}
-#'   \item{fim}{numeric, ending position of the variable in the microdata txt file}
-#'   \item{tamanho}{numeric, size of the variable in the microdata txt file}
-#'   \item{variavel}{character, name of the variable in the microdata txt file}
+#'   \item{inicio}{numeric, posição inicial da variável no arquivo txt de microdados}
+#'   \item{fim}{numeric, posição final da variável no arquivo txt de microdados}
+#'   \item{tamanho}{numeric, tamanho da variável no arquivo txt de microdados}
+#'   \item{variavel}{character, nome da variável no arquivo txt de microdados}
 #' }
 "leitores_2018"
 
-#' Annual PNADC reader 2019
+#' Leitores da PNADC anual - 2019
 
 #'
-#' @format A data frame with 287 rows and 4 variables:
+#' @format Um dataframe com 287 linhas e 4 variáveis
 #' \describe{
-#'   \item{inicio}{numeric, beggining position of the variable in the microdata txt file}
-#'   \item{fim}{numeric, ending position of the variable in the microdata txt file}
-#'   \item{tamanho}{numeric, size of the variable in the microdata txt file}
-#'   \item{variavel}{character, name of the variable in the microdata txt file}
+#'   \item{inicio}{numeric, posição inicial da variável no arquivo txt de microdados}
+#'   \item{fim}{numeric, posição final da variável no arquivo txt de microdados}
+#'   \item{tamanho}{numeric, tamanho da variável no arquivo txt de microdados}
+#'   \item{variavel}{character, nome da variável no arquivo txt de microdados}
 #' }
 "leitores_2019"
 
-#' Annual PNADC deflator
+#' Deflatores da PNADC anual
 
 #'
-#' @format A data frame with 972 rows and 7 variables:
+#' @format Um dataframe com 972 linhas e 7 variáveis
 #' \describe{
-#'   \item{Ano}{Year}
-#'   \item{ID_deflator}{key value combining Year (4 digits), Quarter (1 digit) and UF (2 digits), to join with microdata}
-#'   \item{CO1}{deflator for the same year, usual (habitual) values}
-#'   \item{CO1e}{deflator for the same year, effective (efetivo) values}
-#'   \item{CO2}{deflator for the last year, usual (habitual) values}
-#'   \item{CO2e}{deflator for the last year, effective (efetivo) values}
-#'   \item{CO3}{deflator for calculations related to poverty line}
+#'   \item{Ano}{ano}
+#'   \item{ID_deflator}{Identificador, combinando Ano (4 dígitos), Trimestre (1 dígito) e UF (2 dígitos). É a chave para juntar aos dataframes com os microdados da PNADC}
+#'   \item{CO1}{deflator a preços médios do ano, valores habituais}
+#'   \item{CO1e}{deflator a preços médios do ano, valores efetivos}
+#'   \item{CO2}{deflator a preços médios do último ano, valores habituais}
+#'   \item{CO2e}{deflator a preços médios do último ano, valores efetivos}
+#'   \item{CO3}{deflator para cálculos relacionados à linha de pobreza (ODM/ODS)}
 #' }
 #' @seealso https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/Anual/Microdados/Visita/Documentacao_Geral/PNADcIBGE_Deflator_Anual_Visita.pdf
 "deflator"

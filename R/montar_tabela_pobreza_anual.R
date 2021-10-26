@@ -1,10 +1,11 @@
-#' Add monetary poverty condition as a column
+#' Adicionar condição de pobreza monetária como uma coluna
 #'
-#' Add household per capita monthly income as a column
-#' @param df_pnadc The dataframe with the Annual PNADC data (see ler_pnadc_anual)
-#' @param linha_pob The monetary poverty threshold (household per capita monthly income)
-#' @return A dataframe without rows in which VD2002 is 15, 16, 17; and +2 cols: rdpc with household per capita monthly income and pobreza that equals 1 if person is poor (household per capita monthly income lower than the poverty threshold)
-#' @examples montar_tabela_pobreza_anual(pnadc_2019, 400);
+#' Adicionar condição de pobreza monetária como uma coluna (dummy)
+#' @param df_pnadc O dataframe com dados da PNADC anual (ver ler_pnadc_anual)
+#' @param linha_pob A linha monetária de pobreza, em termos da renda domiciliar per capita mensal
+#' @return Um dataframe sem as linhas nas quais VD2002 igual a 15, 16 ou 17; e com 2 colunas adicionais: "rdpc" com a renda domiciliar per capital mensal real e "pobreza" com valor igual a 1 se a pessoa for pobre (rdpc < linha de pobreza)e 0 caso contrário
+#' @examples montar_tabela_pobreza_anual(pnadc_2019, linha_pob = 400);
+#' @seealso calcular_pobreza_anual, montar_tabela_rdpc_anual, calcular_rdpc_media_anual
 #' @export
 
 montar_tabela_pobreza_anual <- function(df_pnadc, linha_pob){

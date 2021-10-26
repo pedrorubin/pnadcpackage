@@ -1,9 +1,10 @@
-#' Calculate the unoccupied population
+#' Calcular desocupados
 #'
-#' Calculate the unoccupied population
-#' @param df_pnadc The dataframe with the Annual PNADC data (see ler_pnadc_anual)
-#' @return A dataframe with 3 cols: year, total unoccupied and % of the workforce that are unoccupied
+#' Calcular desocupados (número absoluto e taxa de desocupação)
+#' @param df_pnadc O dataframe com dados da PNADC anual (ver ler_pnadc_anual)
+#' @return Um dataframe com 3 colunas: ano, total desocupados e taxa de desocupação (% da força de trabalho)
 #' @examples calcular_desocupados_anual(pnadc_2019);
+#' @seealso ler_pnadc_anual
 #' @export
 
 

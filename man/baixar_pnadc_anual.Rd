@@ -2,21 +2,21 @@
 % Please edit documentation in R/baixar_pnadc_anual.R
 \name{baixar_pnadc_anual}
 \alias{baixar_pnadc_anual}
-\title{Download and unzip Annual PNADC microdata}
+\title{Baixa e descompacta os microdados da PNADC anual}
 \usage{
-baixar_pnadc_anual(ano, destination_path)
+baixar_pnadc_anual(ano, caminho_pasta)
 }
 \arguments{
-\item{ano}{Year of of the Annual PNADC}
+\item{ano}{Ano da PNADC Anual}
 
-\item{destination_path}{The folder in which the files are to be stored (if folder does not exist, it will be created)}
+\item{caminho_pasta}{A pasta (o caminho para a pasta) na qual os arquivos serão guardados (se não existir, a pasta será criada)}
 }
 \value{
-The microdata files (txt) in the designated path
+Os arquivos de microdados (txt) na pasta designada
 }
 \description{
-Download and create the reader file and save as both rds and csv
+Baixa e descompacta os microdados da PNADC anual (é preciso acesso a internet)
 }
 \examples{
-baixar_pnadc_anual(ano = 2019, destination_path = "./microdata");
+baixar_pnadc_anual(ano = 2019, caminho_pasta = "./microdata");
 }

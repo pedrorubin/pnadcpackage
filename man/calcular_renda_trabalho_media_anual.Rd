@@ -2,22 +2,25 @@
 % Please edit documentation in R/calcular_renda_trabalho_media_anual.R
 \name{calcular_renda_trabalho_media_anual}
 \alias{calcular_renda_trabalho_media_anual}
-\title{Calculate average work income}
+\title{Calcular a renda média mensal do trabalho}
 \usage{
 calcular_renda_trabalho_media_anual(df_pnadc, tipo)
 }
 \arguments{
-\item{df_pnadc}{The dataframe with the Annual PNADC data (see ler_pnadc_anual)}
+\item{df_pnadc}{O dataframe com dados da PNADC anual (ver ler_pnadc_anual)}
 
-\item{tipo}{"habitual" or "efetivo" The kind of income: "habitual" is the customary monthly income; "efetivo" is the income actually received in that month}
+\item{tipo}{"habitual" ou "efetivo". O primeiro é a renda que costuma receber, o segundo é a renda efetivamente recebida}
 }
 \value{
-A dataframe with 3 cols: year, real average monthly work income and nominal average monthly work income
+Um dataframe com 3 colunas: ano, renda média mensal do trabalho real e nominal
 }
 \description{
-Calculate average work income
+Calcular a renda média mensal do trabalho
 }
 \examples{
 calcular_renda_trabalho_media_anual(pnadc_2019, tipo = "habitual");
 calcular_renda_trabalho_media_anual(pnadc_2013, tipo = "efetivo");
+}
+\seealso{
+calcular_rdpc_media_anual,  calcular_renda_trabalho_percentil_anual
 }

@@ -3,20 +3,20 @@
 \docType{data}
 \name{leitores_2015}
 \alias{leitores_2015}
-\title{Annual PNADC reader 2015}
+\title{Leitores da PNADC anual - 2015}
 \format{
-A data frame with 287 rows and 4 variables:
+Um dataframe com 287 linhas e 4 variáveis
 \describe{
-  \item{inicio}{numeric, beggining position of the variable in the microdata txt file}
-  \item{fim}{numeric, ending position of the variable in the microdata txt file}
-  \item{tamanho}{numeric, size of the variable in the microdata txt file}
-  \item{variavel}{character, name of the variable in the microdata txt file}
+  \item{inicio}{numeric, posição inicial da variável no arquivo txt de microdados}
+  \item{fim}{numeric, posição final da variável no arquivo txt de microdados}
+  \item{tamanho}{numeric, tamanho da variável no arquivo txt de microdados}
+  \item{variavel}{character, nome da variável no arquivo txt de microdados}
 }
 }
 \usage{
 leitores_2015
 }
 \description{
-Annual PNADC reader 2015
+Leitores da PNADC anual - 2015
 }
 \keyword{datasets}

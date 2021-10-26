@@ -1,13 +1,13 @@
-#' Download and create the reader file for the Annual PNADC as both rds and csv
+#' Baixa e cria o arquivo de leitor para a PNADC anual, em rds e csv
 #'
-#' Download and create the reader file for the Annual PNADC as both rds and csv
-#' @param ano Year of of the Annual PNADC
-#' @param destination_path The folder in which the files are to be stored (if folder does not exist, it will be created)
-#' @return The files in the designated path (rds and csv)
-#' @examples baixar_leitor_anual(ano = 2019, destination_path = "./leitores");
+#' Baixa e cria o arquivo de leitor para a PNADC anual, em rds e csv (é preciso acesso a internet)
+#' @param ano Ano da PNADC Anual
+#' @param caminho_pasta A pasta (o caminho para a pasta) na qual os arquivos serão guardados (se não existir, a pasta será criada)
+#' @return Os arquivos rds e csv na pasta designada
+#' @examples baixar_leitor_anual(ano = 2019, caminho_pasta = "./leitores");
 #' @export
 
-baixar_leitor_anual <- function(ano, destination_path){
+baixar_leitor_anual <- function(ano, caminho_pasta){
 
   if(ano %in% 2012:2014){
     url <- "https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/Anual/Microdados/Visita/Visita_1/Documentacao/dicionario_PNADC_microdados_2012_a_2014_visita1_20210617.xls"
@@ -45,8 +45,8 @@ baixar_leitor_anual <- function(ano, destination_path){
     select(inicio, fim, tamanho, variavel)
 
 
-  write_rds(leitores, file = glue("{destination_path}/leitores_{ano}.rds"))
-  write_csv(leitores, file = glue("{destination_path}/leitores_{ano}.csv"))
+  write_rds(leitores, file = glue("{caminho_pasta}/leitores_{ano}.rds"))
+  write_csv(leitores, file = glue("{caminho_pasta}/leitores_{ano}.csv"))
 
 }
 

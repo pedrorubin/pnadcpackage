@@ -2,19 +2,24 @@
 % Please edit documentation in R/calcular_rdpc_media_anual.R
 \name{calcular_rdpc_media_anual}
 \alias{calcular_rdpc_media_anual}
-\title{Calculate average household per capita monthly income}
+\title{Calcular a renda domiciliar per capital mensal média}
 \usage{
 calcular_rdpc_media_anual(df_pnadc)
 }
 \arguments{
-\item{df_pnadc}{The dataframe with the Annual PNADC data (see ler_pnadc_anual)}
+\item{df_pnadc}{O dataframe com dados da PNADC anual (ver ler_pnadc_anual)}
 }
 \value{
-A dataframe with 2 cols: year and the average household per capita monthly income
+Um dataframe com 6 colunas: ano e a renda domiciliar per capita média mensal
 }
 \description{
-Calculate average household per capita monthly income
+Calcular a renda domiciliar per capital mensal média
 }
 \examples{
 calcular_rdpc_media_anual(pnadc_2019);
+}
+\seealso{
+calcular_rdpc_percentil_anual
+
+calcular_renda_trabalho_media_anual
 }

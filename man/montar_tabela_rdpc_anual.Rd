@@ -2,19 +2,22 @@
 % Please edit documentation in R/montar_tabela_rdpc_anual.R
 \name{montar_tabela_rdpc_anual}
 \alias{montar_tabela_rdpc_anual}
-\title{Add household per capita monthly income as a column}
+\title{Adicionar renda domiciliar per capita mensal real como uma coluna}
 \usage{
 montar_tabela_rdpc_anual(df_pnadc)
 }
 \arguments{
-\item{df_pnadc}{The dataframe with the Annual PNADC data (see ler_pnadc_anual)}
+\item{df_pnadc}{O dataframe com dados da PNADC anual (ver ler_pnadc_anual)}
 }
 \value{
-A dataframe without rows in which VD2002 is 15, 16, 17; and +1 col (rdpc) with household per capita monthly income
+Um dataframe sem as linhas nas quais VD2002 igual a 15, 16 ou 17; e com 1 coluna adicional: "rdpc" com a renda domiciliar per capital mensal real
 }
 \description{
-Add household per capita monthly income as a column
+Adicionar renda domiciliar per capita mensal real como uma coluna
 }
 \examples{
 montar_tabela_rdpc_anual(pnadc_2019);
+}
+\seealso{
+calcular_rdpc_media_anual, calcular_rdpc_percentil_anual
 }

@@ -1,12 +1,14 @@
-#' Calculate the "nem-nem" youth population
+#' Calcular população jovem nem-nem
 #'
-#' Calculate the "nem-nem" youth population: people between "idade_min" and "idade_max" that neither study nor work
-#' @param df_pnadc The dataframe with the Annual PNADC data (see ler_pnadc_anual)
-#' @param idade_min The (inclusive) lowerbound age to define youth - default = 15
-#' @param idade_max The (inclusive) upperbound age to define youth - deafult = 29
-#' @return A dataframe with 3 cols: year, total youth "nem-nem" and % of the youth that are "nem-nem"
-#' @examples calcular_desocupados_anual(pnadc_2019);
+#' Calcular população jovem nem-nem: pessoas com idade entre "idade_min" e "idade_max" que não estudam nem trabalham
+#' @param df_pnadc O dataframe com dados da PNADC anual (ver ler_pnadc_anual)
+#' @param idade_min O patamar inferior de idade que define "jovem" (default = 15; mínimo = 14). A idade escolhida faz parte da população jovem
+#' @param idade_max O patamar inferior de idade que define "jovem" (default = 15). A idade escolhida faz parte da população jovem
+#' @return Um dataframe com 3 colunas: ano, total nem-nem e % de nem-nem dentro da população jovem
+#' @examples calcular_nem_nem_anual(pnadc_2013, idade_min = 15, idade_max = 29);
+#' @examples calcular_nem_nem_anual(pnadc_2014, idade_min = 14, idade_max = 18);
 #' @references Neri, 2021 - https://www.cps.fgv.br/cps/NemNem/
+#' @seealso ler_pnadc_anual
 #' @export
 
 

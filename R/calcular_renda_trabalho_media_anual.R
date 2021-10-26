@@ -1,11 +1,12 @@
-#' Calculate average work income
+#' Calcular a renda média mensal do trabalho
 #'
-#' Calculate average work income
-#' @param df_pnadc The dataframe with the Annual PNADC data (see ler_pnadc_anual)
-#' @param tipo "habitual" or "efetivo" The kind of income: "habitual" is the customary monthly income; "efetivo" is the income actually received in that month
-#' @return A dataframe with 3 cols: year, real average monthly work income and nominal average monthly work income
+#' Calcular a renda média mensal do trabalho
+#' @param df_pnadc O dataframe com dados da PNADC anual (ver ler_pnadc_anual)
+#' @param tipo "habitual" ou "efetivo". O primeiro é a renda que costuma receber, o segundo é a renda efetivamente recebida
+#' @return Um dataframe com 3 colunas: ano, renda média mensal do trabalho real e nominal
 #' @examples calcular_renda_trabalho_media_anual(pnadc_2019, tipo = "habitual");
 #' @examples calcular_renda_trabalho_media_anual(pnadc_2013, tipo = "efetivo");
+#' @seealso calcular_rdpc_media_anual,  calcular_renda_trabalho_percentil_anual
 #' @export
 
 

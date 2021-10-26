@@ -1,15 +1,16 @@
-#' Load annual PNADC microdata
+#' Carregar os microdados da PNADC anual
 #'
-#' Load annual PNADC microdata
-#' @param ano Year
-#' @param path_pnadc The folder in which the microdata txt files are stores
-#' @return A dataframe with all the microdata information
-#' @examples ler_pnadc_anual(2018, "./microdata_folder");
+#' Carregar (para o R) os microdados da PNADC anual
+#' @param ano ano
+#' @param caminho_pnadc A pasta na qual os arquivos de microdados estão guardados (em geral a mesma utilizada na função baixar_pnadc_anual)
+#' @return Um dataframe com todos os microdados
+#' @examples ler_pnadc_anual(2018, "./pasta_microdados");
+#' @seealso baixar_pnadc_anual
 #' @export
 
 
-ler_pnadc_anual <- function(ano, path_pnadc) {
-  arquivo <- glue("{path_pnadc}/PNADC_{ano}_visita1.txt")
+ler_pnadc_anual <- function(ano, caminho_pnadc) {
+  arquivo <- glue("{caminho_pnadc}/PNADC_{ano}_visita1.txt")
 
   leitor_nome <- glue("leitores_{ano}")
 

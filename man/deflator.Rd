@@ -3,24 +3,24 @@
 \docType{data}
 \name{deflator}
 \alias{deflator}
-\title{Annual PNADC deflator}
+\title{Deflatores da PNADC anual}
 \format{
-A data frame with 972 rows and 7 variables:
+Um dataframe com 972 linhas e 7 variáveis
 \describe{
-  \item{Ano}{Year}
-  \item{ID_deflator}{key value combining Year (4 digits), Quarter (1 digit) and UF (2 digits), to join with microdata}
-  \item{CO1}{deflator for the same year, usual (habitual) values}
-  \item{CO1e}{deflator for the same year, effective (efetivo) values}
-  \item{CO2}{deflator for the last year, usual (habitual) values}
-  \item{CO2e}{deflator for the last year, effective (efetivo) values}
-  \item{CO3}{deflator for calculations related to poverty line}
+  \item{Ano}{ano}
+  \item{ID_deflator}{Identificador, combinando Ano (4 dígitos), Trimestre (1 dígito) e UF (2 dígitos). É a chave para juntar aos dataframes com os microdados da PNADC}
+  \item{CO1}{deflator a preços médios do ano, valores habituais}
+  \item{CO1e}{deflator a preços médios do ano, valores efetivos}
+  \item{CO2}{deflator a preços médios do último ano, valores habituais}
+  \item{CO2e}{deflator a preços médios do último ano, valores efetivos}
+  \item{CO3}{deflator para cálculos relacionados à linha de pobreza (ODM/ODS)}
 }
 }
 \usage{
 deflator
 }
 \description{
-Annual PNADC deflator
+Deflatores da PNADC anual
 }
 \seealso{
 https://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Nacional_por_Amostra_de_Domicilios_continua/Anual/Microdados/Visita/Documentacao_Geral/PNADcIBGE_Deflator_Anual_Visita.pdf
