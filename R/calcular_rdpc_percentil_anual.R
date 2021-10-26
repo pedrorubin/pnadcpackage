@@ -7,6 +7,7 @@
 #' @examples calcular_rdpc_percentil_anual(pnadc_2019);
 #' @examples calcular_rdpc_percentil_anual(pnadc_2015, percentil = c(0.1, 0.4, 0.9, 0.95))
 #' @seealso calcular_rdpc_media_anual
+#' @importFrom survey svydesign svyquantile
 #' @export
 
 calcular_rdpc_percentil_anual <- function(df_pnadc, percentil = 0.5){
@@ -34,7 +35,9 @@ calcular_rdpc_percentil_anual <- function(df_pnadc, percentil = 0.5){
 
   quantis_rend_dom <- svyquantile(~rdpc, plan, quantiles = percentil, na.rm = F, ci = F)
   x <- quantis_rend_dom$rdpc
-  y <- as_tibble(x %>% t() %>% as.data.frame() %>%  rownames_to_column() %>% set_names(c("percentil", "renda"))) %>%
+  y <- as_tibble(x %>% t() %>% as.data.frame() %>%
+                   rownames_to_column() %>%
+                   set_names(c("percentil", "renda"))) %>%
     mutate(Ano = Ano$Ano)
   y
 

@@ -7,6 +7,7 @@
 #' @return Um dataframe com 3 colunas: ano, percentil e a respectiva renda do trabalho mensal máxima
 #' @examples calcular_renda_trabalho_percentil_anual(pnadc_2019);
 #' @examples calcular_renda_trabalho_percentil_anual(pnadc_2015, percentil = c(0.1, 0.4, 0.9, 0.95))
+#' @importFrom survey svydesign svyquantile
 #' @export
 
 

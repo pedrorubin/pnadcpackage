@@ -20,3 +20,6 @@ Carregar (para o R) os microdados da PNADC anual
 \examples{
 ler_pnadc_anual(2018, "./pasta_microdados");
 }
+\seealso{
+baixar_pnadc_anual
+}
