@@ -1,6 +1,6 @@
 # pnadcpackage
 
-Pacote para ler a analisar dados da PNADC anual (trimestral em breve)
+Pacote para ler e analisar dados da PNADC anual (trimestral em breve)
 ## Qualquer coisa:
 prubincosta@gmail.com
 
