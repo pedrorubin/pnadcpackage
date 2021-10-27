@@ -17,8 +17,8 @@ calcular_informalidade <- function(df_pnadc){
     mutate(informal = case_when(VD4009 %in% c(2,4,10) ~ 1,
                                 VD4009 %in% c(8,9) & V4019 == 2 ~ 1,
                                 TRUE ~ 0)) %>%
-    summarise(ano = unique(ano),
+    summarise(ano = unique(Ano),
               total_informal = sum(V1032*informal),
-              taxa_informalidaed = 100*sum(V1032*informal)/unique(ocup))
+              taxa_informalidade = 100*sum(V1032*informal)/unique(ocup))
 }
 
